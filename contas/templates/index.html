@@ -7,8 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+
     <section>
-        <h1>HELLO</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="text" name="cpf" placeholder="CPF">
+            <button>Enviar</button>
+        </form>
+
     </section>
+
 </body>
 </html>
