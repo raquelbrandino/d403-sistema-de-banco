@@ -1,0 +1,6 @@
+"" 
+ambiente 
+.vscode
+banco/.vscode
+banco/__pycache__
+db.sqlite3
