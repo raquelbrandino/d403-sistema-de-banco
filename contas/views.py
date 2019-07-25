@@ -11,3 +11,7 @@ def mostrar_formulario_cadastro(request):
 
     return render(request, 'index.html')
 
+def mostrar_pessoas(request):
+    pessoas = Pessoa.objects.all()
+
+    return render(request, 'pessoas.html', {'dados': pessoas})
